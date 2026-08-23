@@ -1,0 +1,20 @@
+{
+  "settings_version": "0.0.6",
+  "datasets_dir": "C:\\proyectos python\\Tesis 2026\\Proyecto\\datasets",
+  "weights_dir": "weights",
+  "runs_dir": "runs",
+  "uuid": "d9d5e871592e32e69257dd6eebd4e2982b6300c46c35f40216c3f6abbac67975",
+  "sync": true,
+  "api_key": "",
+  "openai_api_key": "",
+  "clearml": true,
+  "comet": true,
+  "dvc": true,
+  "hub": true,
+  "mlflow": true,
+  "neptune": true,
+  "raytune": true,
+  "tensorboard": true,
+  "wandb": false,
+  "vscode_msg": true
+}
