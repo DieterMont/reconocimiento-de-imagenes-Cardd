@@ -1,0 +1,50 @@
+{
+ "torch": "2.11.0+cu128",
+ "faster_rcnn": {
+  "BatchNorm2d": 65,
+  "FrozenBatchNorm2d": 0,
+  "BN_en_modo_train_tras_eval": 65,
+  "parametros_total": 43284348,
+  "parametros_entrenables_al_construir": 41839420,
+  "tamano_pth_MB": 173.5,
+  "claves_checkpoint": [
+   "epoch",
+   "model_state_dict",
+   "config",
+   "history",
+   "best_val_map50",
+   "best_val_loss",
+   "best_epoch",
+   "label_mapping"
+  ]
+ },
+ "mask_rcnn": {
+  "BatchNorm2d": 69,
+  "FrozenBatchNorm2d": 0,
+  "BN_en_modo_train_tras_eval": 69,
+  "parametros_total": 45909891,
+  "parametros_entrenables_al_construir": 44464963,
+  "tamano_pth_MB": 184.0,
+  "claves_checkpoint": [
+   "epoch",
+   "model_state_dict",
+   "config",
+   "history",
+   "best_val_map50",
+   "best_val_loss",
+   "best_epoch",
+   "label_mapping",
+   "is_swa_average",
+   "swa_start_epoch",
+   "swa_n_epochs"
+  ]
+ },
+ "yolov8_det": {
+  "parametros_total": 3012018,
+  "tamano_pt_MB": 6.3
+ },
+ "yolov8_seg": {
+  "parametros_total": 3264786,
+  "tamano_pt_MB": 6.8
+ }
+}

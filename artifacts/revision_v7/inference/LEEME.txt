@@ -1,0 +1,8 @@
+Los archivos de esta corrida (21/09, madrugada) quedaron en invalido_bug_vram_20260921/.
+Faster R-CNN y Mask R-CNN salieron en ~1.5 s/imagen (deberian ser decenas de ms, como YOLO).
+Causa: el script anterior cargaba las 374 imagenes de prueba en la GPU antes de medir; con 4 GB
+de VRAM eso agoto la memoria y Windows uso "memoria de GPU compartida" (PCIe), que es 50-100 veces
+mas lenta. YOLO no se vio afectado porque sus imagenes redimensionadas a 640x640 pesan mucho menos.
+El script scripts/revision_v7/benchmark_inferencia.py ya esta corregido (cada imagen se transfiere
+a la GPU justo antes de medirla, no se guardan las 374 a la vez). Vuelve a correrlo; ahora deberia
+tardar unos minutos, no una hora, porque el fallo tambien ralentizaba el propio calculo.

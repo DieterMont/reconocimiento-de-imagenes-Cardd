@@ -1,0 +1,61 @@
+{
+ "fecha": "2026-09-20T20:48:35",
+ "test_imagenes": 374,
+ "test_anotaciones": 785,
+ "map_reproducido": {
+  "yolov8_det": {
+   "n_detecciones": 800,
+   "map_50_95_pkl": 0.46122554361745904,
+   "map_50_pkl": 0.6220849977224011,
+   "map_50_95_json": 0.46122554361745915,
+   "map_50_json": 0.6220849977224011,
+   "coincide_1e-3": true
+  },
+  "faster_rcnn": {
+   "n_detecciones": 833,
+   "map_50_95_pkl": 0.3575397879389666,
+   "map_50_pkl": 0.515137096025687,
+   "map_50_95_json": 0.3575397879389667,
+   "map_50_json": 0.5151370960256869,
+   "coincide_1e-3": true
+  },
+  "yolov8_seg": {
+   "n_detecciones": 784,
+   "map_50_95_pkl": 0.4669769297641711,
+   "map_50_pkl": 0.6350971923042097,
+   "map_50_95_json": 0.4699046643475631,
+   "map_50_json": 0.6394251055081424,
+   "coincide_1e-3": false
+  },
+  "mask_rcnn": {
+   "n_detecciones": 884,
+   "map_50_95_pkl": 0.3504606043497842,
+   "map_50_pkl": 0.5093205655937477,
+   "map_50_95_json": 0.3540130657906876,
+   "map_50_json": 0.5146714675617399,
+   "coincide_1e-3": false
+  }
+ },
+ "particiones": {
+  "train": 2816,
+  "val": 810,
+  "test": 374
+ },
+ "solapamiento_nombres": {
+  "train&val": 0,
+  "train&test": 0,
+  "val&test": 0
+ },
+ "yolo_runs": {
+  "yolov8_det_train": {
+   "epocas_ejecutadas": 270,
+   "mejor_epoca": 50,
+   "mejor_map50_95_val_caja": 0.56112
+  },
+  "yolov8_seg_train": {
+   "epocas_ejecutadas": 290,
+   "mejor_epoca": 97,
+   "mejor_map50_95_val_caja": 0.56753
+  }
+ }
+}
